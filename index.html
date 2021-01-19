@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cd5964d423.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Formulaire SNCF</title>
+</head>
+<body>
+	<!--Section Header-->
+	<header>
+		<div class="infos">
+			<p>Voyageurs/Billets & Infos trajets/</p>
+			<div>
+	         <i class="fas fa-print rose" href="#imprimante"></i>
+	         <i class="fas fa-share-alt rose" href="#partager"></i>
+	    	 </div>
+	    </div>
+	    <div class="sujet">
+      		<h1>Réservations</h1>
+      		<img src="img/logo-voyage-sncf.png" alt="Logo SNCF">
+		</div>
+		<hr>
+	</header>
+	<!--Section Voyage-->
+	<main>
+		 <div class="espace">
+            <p><i class="fas fa-wheelchair"></i>Voyageur handicapé, rendez-vous sur votre <a href="#" class="rose">espace dédié.</a></p>
+            <a href="pageMesReservations"class="uppercase rose">Gérer mes réservations</a>
+        </div>
+        <p>*Champs obligatoires</p>
+		<div class="ar">
+			<input type="checkbox" id="ar" name="ar" value="ar">
+  			<label for="ar"> Aller et retour différents</label>
+		</div>
+		<form id="trajets">
+			<div>
+				<label for="Départ">Départ*</label>
+				<input type="text" name="Départ">
+			</div>
+			<div>
+				<label for="Arrivée">Arrivée*</label>
+				<input type="text" name="Arrivée">
+			</div>
+			<div>
+				<label for="date Aller">Aller le*</label>
+				<input type="date" id="dAller" name="dAller"value="2021-01-18"min="2021-01-18" max="2021-12-31">
+				<select name="" id="">
+	                 <option value="">Départ à</option>
+	            </select>
+	            <select name="horaires" id="horaires">
+				    <option value="7h">7h</option>
+				    <option value="8h">8h</option>
+				    <option value="9h">9h</option>
+				    <option value="10h">10h</option>
+				    <option value="11h">11h</option>
+				    <option value="12h">12h</option>
+	            </select>
+	        </div>
+	        <div>
+				<label for="date Retour">Retour le</label>
+				<input type="date" id="dRetour" name="dRetour"value="2021-01-19"min="2021-01-19" max="2021-12-31">
+				<select name="" id="">
+	             <option value="">Départ à</option>
+	            </select>
+	            <select name="horaires" id="horaires">
+				    <option value="7h">7h</option>
+				    <option value="8h">8h</option>
+				    <option value="9h">9h</option>
+				    <option value="10h">10h</option>
+				    <option value="11h">11h</option>
+				    <option value="12h">12h</option>
+	            </select>
+	        </div>
+	        <div>
+				<input type="checkbox" id="tDirect" name="tDirect" value="tDirect">
+	  			<label for="trajetDirect">Trajet direct</label>
+				<label for="trajetVia">Trajet via</label>
+				<input type="text" name="trajetvia">
+			</div>
+		</form>
+		<br>
+		<!--Section Confort-->
+		<hr>
+		<div class="confort">
+			<p>CONFORT</p>
+			<input type="radio" id="1class" name="confort" value="1class"><label for="1class">1ère classe</label>
+			<input type="radio" id="2class" name="confort" value="2class"><label for="2class">2nde classe</label>
+		</div>
+		<hr>
+	</main>
+	<!--Section Passagers-->
+	<section>
+			<div class="nbPassagers">
+			  <label for="nombrepassagers"><h2>PASSAGERS </h2></label>
+				<select name="nbPassagers" id="nbPassagers">
+					<option value="1">1</option>
+				    <option value="2">2</option>
+				    <option value="3">3</option>
+				    <option value="4">4</option>
+				    <option value="5">5</option>
+				    <option value="6">6</option>
+				    <option value="7">7</option>
+				    <option value="8">8</option>
+				    <option value="9">9</option>
+	            </select>
+	    	</div>
+		<a href="#page9+" id="page9" class="page9 rose"><h3>Plus de 9 passagers</h3></a>
+		<div class="passager ">
+			<h3 class="rose">PASSAGER 1</h3>
+			<hr>
+			<br>
+			<div class="formpassager">
+				<div>
+				<label for="profilpassager">Profil du passager</label>
+					<select name="profil" id="profil">
+					     <option value="26-29 ans">26-29 ans</option>
+					     <option value="60 et +">60 et +</option>
+					     <option value="12-25 ans">12-25 ans</option>
+					     <option value="4-11 ans">4-11 ans</option>
+					     <option value="0-3 ans">0-3 ans</option>
+					     <option value="0-3 ans gratuit">0-3 ans sur genoux (gratuit)</option>
+		            </select>
+		        </div>
+		        <div>
+		        <label for="carteabonnement">Carte et Abonnement</label>
+					<select name="abonnement" id="abonnement">
+					     <option value="CarteJeune">Carte Avantage Jeune</option>
+					     <option value="CarteWeek-end">Carte Avantage Week-end</option>
+					     <option value="CarteFamille">Carte Avantage Famille</option>
+					     <option value="TGVmax">TGVmax</option>
+					     <option value="CarteLiberté">Carte Liberté</option>
+		            </select>
+		        </div>
+		        <div>
+		        <label for="Code_avantage">Code Avantage</label>
+	                    <input type="text" placeholder="Saissisez ici votre code">
+		        </div>
+		        <div>
+		        <label for="programmefidélité">Programme fidélité</label>
+					<select name="abonnement" id="abonnement">
+					     <option value="Sans programme de fidélité">Sans programme de fidélité</option>
+					     <option value="Voyageur">Voyageur</option>
+					     <option value="Grand Voyageur">Grand Voyageur</option>
+					     <option value="Grand Voyageur Plus">Grand Voyageur Plus</option>
+					     <option value="Grand Voyageur Le Club">Grand Voyageur Le Club</option>
+		            </select>
+				</div>
+			</div>
+		</div>
+		<hr>
+	<!--Section Animaux -->
+		<div>
+			<p>Voyager avec votre animal de compagnie</p>	
+		</div>
+	</section>
+	<footer>
+		<button class="input rose">HORAIRES SEULS</button>
+		<input type="submit" class="input recherche" value="RECHERCHER">
+	</footer>
+</body>

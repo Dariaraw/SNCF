@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+    padding: 0;
+	font-family: "Futura", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+  padding: 5px;
+  margin: 15px;
+}
+.rose {
+	color: #cb006c;
+}
+header > p {
+	color : #6f6f83;
+	display: flex;
+}
+.infos{
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	padding-bottom: 50px;
+}
+.share {
+	display: flex;
+	justify-content: flex-end;
+}
+.sujet {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	text-transform: uppercase;
+}	
+.ar {
+	background-color: #f1f1f1;
+	padding: 10px;
+	margin: 20px 0px;
+}
+#trajets {
+	justify-content: 
+	padding: 20px;
+}
+.confort {
+	margin: 20px 0px;
+
+}
+.nbPassagers {
+	padding-top:20px;
+	display: flex;
+  justify-content: flex-start;
+}
+.page9 {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.passager {
+	background-color: #f1f1f1;
+	padding: 10px;
+	margin: 20px 0px;
+}
+footer {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+	margin-top: 40px;
+}
+.input {
+  padding: 0.5em;
+  border-radius: 5px;
+}
+.recherche {
+  color: white;
+  background-color : #cb006c;
+}
