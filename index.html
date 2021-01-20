@@ -37,15 +37,15 @@
 		<form id="trajets">
 			<div>
 				<label for="Départ">Départ*</label>
-				<input type="text" name="Départ">
+				<input type="text" name="Départ" required>
 			</div>
 			<div>
 				<label for="Arrivée">Arrivée*</label>
-				<input type="text" name="Arrivée">
+				<input type="text" name="Arrivée" required>
 			</div>
 			<div>
 				<label for="date Aller">Aller le*</label>
-				<input type="date" id="dAller" name="dAller"value="2021-01-18"min="2021-01-18" max="2021-12-31">
+				<input type="date" id="dAller" name="dAller"value="2021-01-18"min="2021-01-18" max="2021-12-31" required>
 				<select name="" id="">
 	                 <option value="">Départ à</option>
 	            </select>
@@ -60,7 +60,7 @@
 	        </div>
 	        <div>
 				<label for="date Retour">Retour le</label>
-				<input type="date" id="dRetour" name="dRetour"value="2021-01-19"min="2021-01-19" max="2021-12-31">
+				<input type="date" id="dRetour" name="dRetour"value="2021-01-19"min="2021-01-19" max="2021-12-31" required>
 				<select name="" id="">
 	             <option value="">Départ à</option>
 	            </select>
@@ -74,10 +74,10 @@
 	            </select>
 	        </div>
 	        <div>
-				<input type="checkbox" id="tDirect" name="tDirect" value="tDirect">
+				<input type="checkbox" id="tDirect" name="tDirect" value="tDirect" required>
 	  			<label for="trajetDirect">Trajet direct</label>
 				<label for="trajetVia">Trajet via</label>
-				<input type="text" name="trajetvia">
+				<input type="text" name="trajetvia" required>
 			</div>
 		</form>
 		<br>
@@ -111,7 +111,7 @@
 			<h3 class="rose">PASSAGER 1</h3>
 			<hr>
 			<br>
-			<div class="formpassager">
+			<div class="formpassager" required>
 				<div>
 				<label for="profilpassager">Profil du passager</label>
 					<select name="profil" id="profil">
